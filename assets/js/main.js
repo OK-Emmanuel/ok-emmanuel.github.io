@@ -256,23 +256,23 @@
 })();
 
 // Send Email Codes
-const btn = document.getElementById('button');
+// const btn = document.getElementById('button');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+// document.getElementById('form')
+//  .addEventListener('submit', function(event) {
+//    event.preventDefault();
 
-   btn.value = 'Sending...';
+//    btn.value = 'Sending...';
 
-   const serviceID = 'service_139eypm';
-   const templateID = 'template_qa2dghf';
+//    const serviceID = 'service_139eypm';
+//    const templateID = 'template_qa2dghf';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Message Sent Successfully!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
+//    emailjs.sendForm(serviceID, templateID, this)
+//     .then(() => {
+//       btn.value = 'Send Email';
+//       alert('Message Sent Successfully!');
+//     }, (err) => {
+//       btn.value = 'Send Email';
+//       alert(JSON.stringify(err));
+//     });
+// });
